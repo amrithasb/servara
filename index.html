@@ -54,17 +54,17 @@
               documents, and continuity plans in one encrypted local vault.
             </p>
             <div class="hero-actions">
-              <button
+              <a
                 class="button primary"
-                type="button"
-                data-download-trigger
+                data-download-direct
                 data-platform="auto"
+                href="https://github.com/amrithasb/servara/releases/download/v1.0.0/Servara-1.0.0-macOS-arm64.zip"
               >
                 <svg aria-hidden="true" viewBox="0 0 24 24">
                   <path d="M12 3v12m-5-5 5 5 5-5M5 21h14" />
                 </svg>
                 <span>Download Servara</span>
-              </button>
+              </a>
               <a class="button secondary" href="#security">Security overview</a>
             </div>
             <div class="hero-notes" aria-label="Product highlights">
@@ -421,14 +421,14 @@
               </div>
               <h3>Servara for macOS</h3>
               <p>For Apple Silicon Macs running a current version of macOS.</p>
-              <button
+              <a
                 class="button primary full"
-                type="button"
-                data-download-trigger
+                data-download-direct
                 data-platform="mac"
+                href="https://github.com/amrithasb/servara/releases/download/v1.0.0/Servara-1.0.0-macOS-arm64.zip"
               >
                 Download for macOS
-              </button>
+              </a>
               <small>Version 1.0.0 · ZIP · 119 MB</small>
               <details>
                 <summary>SHA-256 checksum</summary>
@@ -451,14 +451,14 @@
               </div>
               <h3>Servara for Windows</h3>
               <p>Portable x64 build for modern 64-bit Windows computers.</p>
-              <button
+              <a
                 class="button secondary dark full"
-                type="button"
-                data-download-trigger
+                data-download-direct
                 data-platform="windows"
+                href="https://github.com/amrithasb/servara/releases/download/v1.0.0/Servara-1.0.0-Windows-x64-portable.zip"
               >
                 Download for Windows
-              </button>
+              </a>
               <small>Version 1.0.0 · ZIP · 148 MB</small>
               <details>
                 <summary>SHA-256 checksum</summary>
@@ -578,22 +578,6 @@
         <a href="mailto:support.servara@gmail.com">support.servara@gmail.com</a>
       </div>
     </footer>
-
-    <dialog class="download-dialog" data-download-dialog aria-labelledby="download-title">
-      <button class="dialog-close" type="button" data-dialog-close aria-label="Close">×</button>
-      <span class="dialog-icon">⇩</span>
-      <p class="eyebrow">DOWNLOAD SERVARA</p>
-      <h2 id="download-title">Before downloading Servara</h2>
-      <p>Review the installation notes and published security information before continuing.</p>
-      <label
-        ><input type="checkbox" data-preview-agreement />
-        <span>I have reviewed the installation and security information.</span></label
-      >
-      <a class="button primary full disabled" data-download-link href="#" download
-        >Continue to download</a
-      >
-      <small>By downloading, you agree to the <a href="legal.html">legal terms</a>.</small>
-    </dialog>
 
     <dialog class="install-dialog" data-install-dialog aria-labelledby="install-title">
       <button class="dialog-close" type="button" data-install-close aria-label="Close">×</button>

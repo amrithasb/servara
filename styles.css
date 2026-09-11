@@ -1397,31 +1397,6 @@ dialog > p:not(.eyebrow) {
   font-size: 12px;
   line-height: 1.7;
 }
-.download-dialog label {
-  display: flex;
-  gap: 10px;
-  margin: 23px 0;
-  padding: 15px;
-  color: #566b64;
-  background: #f4f6f3;
-  border-radius: 10px;
-  font-size: 11px;
-  line-height: 1.5;
-}
-.download-dialog input {
-  margin-top: 2px;
-  accent-color: var(--green-dark);
-}
-.download-dialog > small {
-  display: block;
-  margin-top: 15px;
-  color: #89938f;
-  text-align: center;
-  font-size: 9px;
-}
-.download-dialog > small a {
-  text-decoration: underline;
-}
 .install-tabs {
   display: flex;
   gap: 8px;

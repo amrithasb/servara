@@ -7,11 +7,7 @@ const downloads = {
 const header = document.querySelector('[data-header]')
 const menuButton = document.querySelector('.menu-button')
 const siteNavigation = document.querySelector('#site-nav')
-const downloadDialog = document.querySelector('[data-download-dialog]')
-const downloadLink = document.querySelector('[data-download-link]')
-const previewAgreement = document.querySelector('[data-preview-agreement]')
 const installDialog = document.querySelector('[data-install-dialog]')
-let selectedPlatform = 'mac'
 
 const detectedPlatform = /Windows/i.test(navigator.userAgent) ? 'windows' : 'mac'
 document.querySelector(`[data-platform-card="${detectedPlatform}"]`)?.classList.add('detected')
@@ -32,32 +28,11 @@ siteNavigation?.addEventListener('click', (event) => {
   menuButton?.setAttribute('aria-expanded', 'false')
 })
 
-document.querySelectorAll('[data-download-trigger]').forEach((button) => {
-  button.addEventListener('click', () => {
-    selectedPlatform =
-      button.dataset.platform === 'auto' ? detectedPlatform : button.dataset.platform
-    const platformName = selectedPlatform === 'mac' ? 'macOS' : 'Windows'
-    downloadDialog.querySelector('#download-title').textContent =
-      `Before downloading for ${platformName}`
-    previewAgreement.checked = false
-    downloadLink.classList.add('disabled')
-    downloadLink.href = downloads[selectedPlatform]
-    downloadLink.setAttribute('download', downloads[selectedPlatform].split('/').pop())
-    downloadDialog.showModal()
-    document.body.classList.add('dialog-open')
-  })
+document.querySelectorAll('[data-download-direct]').forEach((link) => {
+  const platform = link.dataset.platform === 'auto' ? detectedPlatform : link.dataset.platform
+  link.href = downloads[platform]
+  link.setAttribute('download', downloads[platform].split('/').pop())
 })
-previewAgreement?.addEventListener('change', () => {
-  downloadLink.classList.toggle('disabled', !previewAgreement.checked)
-  downloadLink.setAttribute('aria-disabled', String(!previewAgreement.checked))
-})
-downloadLink?.addEventListener('click', () => {
-  if (!previewAgreement.checked) return
-  downloadDialog.close()
-})
-document
-  .querySelector('[data-dialog-close]')
-  ?.addEventListener('click', () => downloadDialog.close())
 
 document.querySelector('[data-install-open]')?.addEventListener('click', () => {
   installDialog.showModal()
@@ -67,7 +42,7 @@ document
   .querySelector('[data-install-close]')
   ?.addEventListener('click', () => installDialog.close())
 
-for (const dialog of [downloadDialog, installDialog]) {
+for (const dialog of [installDialog]) {
   dialog?.addEventListener('close', () => document.body.classList.remove('dialog-open'))
   dialog?.addEventListener('click', (event) => {
     const rect = dialog.getBoundingClientRect()
