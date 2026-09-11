@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Servara technical preview privacy information." />
+    <link rel="icon" href="assets/servara-mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Privacy — Servara</title>
+  </head>
+  <body class="legal-page">
+    <header class="site-header legal-header">
+      <div class="nav-shell">
+        <a class="wordmark" href="index.html"
+          ><img src="assets/servara-mark.svg" alt="" width="42" height="42" /><span
+            >Servara</span
+          ></a
+        ><a href="index.html">← Back to website</a>
+      </div>
+    </header>
+    <main class="legal-main">
+      <span class="eyebrow">PRIVACY</span>
+      <h1>Privacy overview</h1>
+      <p class="updated">Technical preview · Version 1.0</p>
+      <section>
+        <h2>The short version</h2>
+        <p>
+          Servara is designed as a local-first desktop application. The technical preview stores
+          vault content on the user’s computer and includes no advertising, analytics, tracking
+          pixels, or remote crash-reporting service.
+        </p>
+      </section>
+      <section>
+        <h2>Information stored by the application</h2>
+        <p>
+          Information entered into the owner vault, supported imported documents, settings, and
+          activity history are stored locally. Vault content and attachment bytes are encrypted at
+          rest. A small local header contains versioned encryption metadata but not the master
+          password.
+        </p>
+      </section>
+      <section>
+        <h2>Network behavior</h2>
+        <p>
+          The packaged technical preview blocks ordinary external network requests. Optional
+          shared-vault functionality remains unavailable unless production cloud infrastructure is
+          explicitly configured in a future build.
+        </p>
+      </section>
+      <section>
+        <h2>Exports and backups</h2>
+        <p>
+          Encrypted Servara backups remain protected by the applicable vault password.
+          Emergency-summary PDFs, printed pages, screenshots, and deliberately exported document
+          copies are plaintext and outside Servara’s protection. Trusted Access packages are
+          separately encrypted and reveal limited manifest metadata before unlock.
+        </p>
+      </section>
+      <section>
+        <h2>Website privacy</h2>
+        <p>
+          This static website contains no cookies, analytics, account forms, advertising, or
+          tracking scripts. A future hosting provider may retain ordinary server request logs under
+          its own infrastructure policy.
+        </p>
+      </section>
+      <section>
+        <h2>Technical-preview limitation</h2>
+        <p>
+          Servara has not received an independent privacy or security audit. Use fictional or
+          low-risk evaluation data until those reviews and the public support process are complete.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

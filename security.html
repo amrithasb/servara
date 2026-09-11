@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Servara technical preview security overview." />
+    <link rel="icon" href="assets/servara-mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Security — Servara</title>
+  </head>
+  <body class="legal-page">
+    <header class="site-header legal-header">
+      <div class="nav-shell">
+        <a class="wordmark" href="index.html"
+          ><img src="assets/servara-mark.svg" alt="" width="42" height="42" /><span
+            >Servara</span
+          ></a
+        ><a href="index.html">← Back to website</a>
+      </div>
+    </header>
+    <main class="legal-main">
+      <span class="eyebrow">SECURITY</span>
+      <h1>Security overview</h1>
+      <p class="updated">Technical preview · Version 1.0</p>
+      <section>
+        <h2>Encryption model</h2>
+        <p>
+          New vaults use a random 256-bit data-encryption key and AES-256-GCM authenticated
+          encryption. The master password is processed with scrypt and a random salt to derive a
+          key-encryption key, which wraps the random vault key. The master password is not stored.
+        </p>
+      </section>
+      <section>
+        <h2>Desktop boundaries</h2>
+        <p>
+          The React interface runs sandboxed with context isolation and without Node.js integration.
+          A narrow preload bridge exposes fixed operations. The desktop process validates request
+          objects, owns keys and filesystem access, rejects navigation, and blocks unapproved
+          network requests.
+        </p>
+      </section>
+      <section>
+        <h2>Documents and backups</h2>
+        <p>
+          Supported imported files are checked for regular-file status, symbolic links, size,
+          extension, and signature before encryption. Backups include authenticated encrypted vault
+          data and documents. Restore verifies contents before transactionally replacing the active
+          vault.
+        </p>
+      </section>
+      <section>
+        <h2>Trusted Access</h2>
+        <p>
+          Each Trusted Access package has its own random key and passphrase-derived wrapping key.
+          The owner selects individual fields and documents. Direct-access secrets are blocked from
+          selection. Packages cannot remotely revoke an already shared copy and do not confer legal
+          authority.
+        </p>
+      </section>
+      <section>
+        <h2>Known limitations</h2>
+        <ul>
+          <li>
+            A compromised computer can capture unlocked information, passwords, memory, screenshots,
+            or exports.
+          </li>
+          <li>JavaScript cannot guarantee complete memory zeroization.</li>
+          <li>
+            Multi-factor authentication gates the official application but does not add entropy to
+            the vault encryption key.
+          </li>
+          <li>Plaintext exports are outside Servara’s protection.</li>
+          <li>
+            The preview is unsigned, unnotarized, and has not received an independent security audit
+            or penetration test.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Reporting</h2>
+        <p>
+          A monitored security-reporting address has not yet been published. Do not submit sensitive
+          vulnerability details through an unverified channel. Public distribution should wait until
+          a reporting and incident-response process is active.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Servara is a private, offline-first desktop organizer for the household information that matters most."
+    />
+    <meta name="theme-color" content="#17324d" />
+    <meta property="og:title" content="Servara — Your household, thoughtfully organized" />
+    <meta
+      property="og:description"
+      content="A private, encrypted desktop home for documents, plans, and the details your household may need."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/servara-mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Servara — Private household organization</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <div class="nav-shell">
+        <a class="wordmark" href="#top" aria-label="Servara home">
+          <img src="assets/servara-mark.svg" alt="" width="42" height="42" />
+          <span>Servara</span>
+        </a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span><span class="sr-only">Open navigation</span>
+        </button>
+        <nav id="site-nav" aria-label="Primary navigation">
+          <a href="#product">Product</a>
+          <a href="#security">Security</a>
+          <a href="#story">Project story</a>
+          <a href="#faq">FAQ</a>
+          <a class="nav-download" href="#download">Download</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-glow glow-one"></div>
+        <div class="hero-glow glow-two"></div>
+        <div class="shell hero-grid">
+          <div class="hero-copy reveal">
+            <div class="status-pill"><span></span> Version 1.0 technical preview</div>
+            <h1>Keep what matters.<br /><em>Ready when it matters.</em></h1>
+            <p class="hero-lede">
+              Servara gives households a calm, private place for important documents, essential
+              details, emergency plans, and carefully selected access for the people they trust.
+            </p>
+            <div class="hero-actions">
+              <button
+                class="button primary"
+                type="button"
+                data-download-trigger
+                data-platform="auto"
+              >
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M12 3v12m-5-5 5 5 5-5M5 21h14" />
+                </svg>
+                <span>Download Servara</span>
+              </button>
+              <a class="button secondary" href="#story">See how it was built</a>
+            </div>
+            <div class="hero-notes" aria-label="Product highlights">
+              <span><i></i> Local-first</span>
+              <span><i></i> AES-256-GCM encrypted</span>
+              <span><i></i> No analytics</span>
+            </div>
+          </div>
+
+          <div class="product-frame reveal" aria-label="Servara dashboard preview">
+            <div class="window-bar">
+              <div class="window-dots"><i></i><i></i><i></i></div>
+              <span>Servara</span>
+              <span class="window-lock">● Vault unlocked</span>
+            </div>
+            <div class="app-preview">
+              <aside class="preview-sidebar">
+                <div class="preview-brand"><b>s</b><strong>Servara</strong></div>
+                <small>OVERVIEW</small>
+                <div class="preview-nav active"><span>▦</span> Dashboard</div>
+                <div class="preview-nav"><span>⌂</span> Household</div>
+                <div class="preview-nav"><span>♙</span> People</div>
+                <small>RECORDS</small>
+                <div class="preview-nav"><span>▤</span> Accounts</div>
+                <div class="preview-nav"><span>♢</span> Insurance</div>
+                <div class="preview-nav"><span>▧</span> Documents</div>
+              </aside>
+              <div class="preview-main">
+                <div class="preview-topbar"><span>Demo Household / Dashboard</span><b>⌕</b></div>
+                <div class="preview-content">
+                  <div class="welcome-card">
+                    <small>YOUR HOUSEHOLD</small>
+                    <h2>Welcome back.</h2>
+                    <p>Your private local vault is ready.</p>
+                    <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span>
+                  </div>
+                  <div class="readiness-card">
+                    <div class="score">80<small>%</small></div>
+                    <div>
+                      <b>Organization readiness</b>
+                      <p>12 of 15 organization tasks complete</p>
+                    </div>
+                    <span class="mini-button">Continue</span>
+                  </div>
+                  <div class="preview-stats">
+                    <div><span>30</span><small>connected records</small></div>
+                    <div><span>8</span><small>encrypted documents</small></div>
+                    <div><span>Today</span><small>last backup</small></div>
+                  </div>
+                  <div class="preview-bottom">
+                    <div>
+                      <small>NEEDS ATTENTION</small><b>3 items to review</b><span></span
+                      ><span></span>
+                    </div>
+                    <div>
+                      <small>RECENTLY UPDATED</small><b>Household records</b><span></span
+                      ><span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Servara principles">
+        <div class="shell trust-grid">
+          <p>Designed around a simple principle:</p>
+          <div>
+            <strong>Private by default</strong><span>Your vault stays on your computer.</span>
+          </div>
+          <div>
+            <strong>Useful under pressure</strong
+            ><span>Find the right detail without the scramble.</span>
+          </div>
+          <div>
+            <strong>Shared deliberately</strong
+            ><span>You decide exactly what leaves the vault.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section product-section" id="product">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <span class="eyebrow">A HOME FOR THE IMPORTANT THINGS</span>
+            <h2>Household clarity,<br />without the digital clutter.</h2>
+            <p>
+              Servara connects the scattered information behind everyday life and difficult
+              moments—without pretending to replace original documents or professional advice.
+            </p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature feature-large reveal">
+              <div class="feature-icon">⌂</div>
+              <span class="feature-number">01</span>
+              <h3>One connected household guide</h3>
+              <p>
+                Bring financial references, insurance, property, legal documents, family contacts,
+                medical coverage, bills, and continuity plans into one structured view.
+              </p>
+              <div class="record-stack" aria-hidden="true">
+                <span><i>▤</i><b>Home insurance</b><small>Reviewed</small></span>
+                <span><i>⌂</i><b>Property details</b><small>Current</small></span>
+                <span><i>♙</i><b>Emergency contacts</b><small>3 people</small></span>
+              </div>
+            </article>
+            <article class="feature reveal">
+              <div class="feature-icon">▣</div>
+              <span class="feature-number">02</span>
+              <h3>Encrypted document vault</h3>
+              <p>
+                Import supported documents into authenticated encrypted storage with safe previews.
+              </p>
+            </article>
+            <article class="feature reveal">
+              <div class="feature-icon">↻</div>
+              <span class="feature-number">03</span>
+              <h3>Review before details go stale</h3>
+              <p>
+                See upcoming renewals, missing relationships, and records that need confirmation.
+              </p>
+            </article>
+            <article class="feature reveal">
+              <div class="feature-icon">◇</div>
+              <span class="feature-number">04</span>
+              <h3>Trusted Access, selected field by field</h3>
+              <p>
+                Create a separate read-only package for one trusted person without exposing the
+                complete owner vault.
+              </p>
+            </article>
+            <article class="feature reveal">
+              <div class="feature-icon">⇩</div>
+              <span class="feature-number">05</span>
+              <h3>Backups you control</h3>
+              <p>Create encrypted backups, verify them before use, and restore transactionally.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section access-section">
+        <div class="shell access-grid">
+          <div class="access-copy reveal">
+            <span class="eyebrow light">TRUSTED ACCESS</span>
+            <h2>Share the right information—not your whole digital life.</h2>
+            <p>
+              Choose a trusted person, select individual records and fields, preview the result, and
+              protect the package with its own passphrase. The recipient gets a locked, read-only
+              view.
+            </p>
+            <ul>
+              <li><span>✓</span> Separate encryption key and passphrase</li>
+              <li><span>✓</span> Direct-access secrets blocked from packages</li>
+              <li><span>✓</span> Search and document preview without owner-vault access</li>
+            </ul>
+          </div>
+          <div class="access-visual reveal">
+            <img
+              src="assets/trusted-access.png"
+              alt="Servara read-only Trusted Access package viewer"
+            />
+            <div class="floating-note">
+              <b>Read only</b><span>Selected by the vault owner</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section security-section" id="security">
+        <div class="shell">
+          <div class="security-heading reveal">
+            <span class="eyebrow">SECURITY IS THE ARCHITECTURE</span>
+            <h2>Built to keep the vault local,<br />locked, and intentionally boring.</h2>
+            <p>
+              Servara minimizes what it can access, keeps encryption in the desktop process, and
+              does not include advertising, analytics, or remote error-reporting libraries.
+            </p>
+          </div>
+          <div class="security-layout">
+            <div class="security-diagram reveal" aria-label="Servara encryption model">
+              <div class="diagram-ring ring-three"></div>
+              <div class="diagram-ring ring-two"></div>
+              <div class="diagram-ring ring-one"></div>
+              <div class="diagram-core">
+                <img src="assets/servara-mark.svg" alt="" /><b>Encrypted vault</b
+                ><span>On your device</span>
+              </div>
+              <span class="diagram-label label-one">AES-256-GCM</span>
+              <span class="diagram-label label-two">scrypt key derivation</span>
+              <span class="diagram-label label-three">Automatic locking</span>
+            </div>
+            <div class="security-list">
+              <article class="reveal">
+                <span>01</span>
+                <div>
+                  <h3>Random per-vault encryption key</h3>
+                  <p>Your password derives a key that wraps a separate random data key.</p>
+                </div>
+              </article>
+              <article class="reveal">
+                <span>02</span>
+                <div>
+                  <h3>Locked by default</h3>
+                  <p>
+                    Manual, inactivity, computer-sleep, and operating-system session locks clear
+                    decrypted state.
+                  </p>
+                </div>
+              </article>
+              <article class="reveal">
+                <span>03</span>
+                <div>
+                  <h3>Optional multi-factor authentication</h3>
+                  <p>
+                    Use authenticator codes, compatible security keys, and one-time recovery codes.
+                  </p>
+                </div>
+              </article>
+              <article class="reveal">
+                <span>04</span>
+                <div>
+                  <h3>Narrow desktop permissions</h3>
+                  <p>A sandboxed interface receives only the specific operations it needs.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="security-note reveal">
+            <strong>Transparent limitation</strong>
+            <p>
+              Servara 1.0 is a technical preview. It has extensive automated checks, but has not yet
+              received an independent security audit or code-signing certificate. Use fictional or
+              low-risk evaluation data until those release gates are complete.
+            </p>
+            <a href="security.html">Read the security overview →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section story-section" id="story">
+        <div class="shell story-grid">
+          <div class="story-copy reveal">
+            <span class="eyebrow">THE PROJECT STORY</span>
+            <h2>Designed and built as an independent student project.</h2>
+            <p class="story-lede">
+              Servara began with a human problem: families often know important information exists,
+              but not where it is, how current it is, or who should be able to see it.
+            </p>
+            <p>
+              The project grew from interface prototypes into a production-shaped Electron and React
+              application with a formal data model, encrypted persistence, migrations, document
+              handling, multi-factor authentication, backups, and a deliberately limited sharing
+              format.
+            </p>
+            <p>
+              Building it required balancing usability with security boundaries—especially making
+              stressful information easier to find without making private information easier to
+              expose.
+            </p>
+          </div>
+          <div class="project-card reveal">
+            <div class="project-card-top"><span>PROJECT SNAPSHOT</span><i>2026</i></div>
+            <dl>
+              <div>
+                <dt>80</dt>
+                <dd>automated tests</dd>
+              </div>
+              <div>
+                <dt>30</dt>
+                <dd>test files</dd>
+              </div>
+              <div>
+                <dt>2</dt>
+                <dd>desktop platforms</dd>
+              </div>
+              <div>
+                <dt>0</dt>
+                <dd>known npm vulnerabilities</dd>
+              </div>
+            </dl>
+            <div class="tool-list">
+              <span>Electron</span><span>React</span><span>Node.js</span><span>Vitest</span
+              ><span>Zod</span><span>WebAuthn</span>
+            </div>
+            <p>Product design · frontend · desktop architecture · encryption workflows · testing</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testing-section">
+        <div class="shell">
+          <div class="testing-card reveal">
+            <div>
+              <span class="eyebrow light">TESTED AS A COMPLETE WORKFLOW</span>
+              <h2>Not just screens.<br />A working desktop application.</h2>
+            </div>
+            <div class="test-flow" aria-label="Tested application workflow">
+              <span>Create vault</span><i>→</i><span>Set up MFA</span><i>→</i
+              ><span>Encrypt documents</span><i>→</i><span>Back up</span><i>→</i
+              ><span>Share selected access</span><i>→</i><span>Restore & relaunch</span>
+            </div>
+            <p>
+              Unit, component, integration, security, performance, development E2E, and packaged
+              macOS E2E checks pass for the current release candidate.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section download-section" id="download">
+        <div class="shell">
+          <div class="download-heading reveal">
+            <span class="eyebrow">DOWNLOAD SERVARA 1.0</span>
+            <h2>Explore the technical preview.</h2>
+            <p>
+              Choose your platform. These evaluation builds are unsigned and intended for
+              demonstration with fictional or low-risk data.
+            </p>
+          </div>
+          <div class="download-grid">
+            <article class="download-card recommended reveal" data-platform-card="mac">
+              <span class="recommended-label">APPLE SILICON</span>
+              <div class="platform-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <rect x="4" y="4" width="16" height="12" rx="2"></rect>
+                  <path d="M2.5 19h19"></path>
+                </svg>
+              </div>
+              <h3>Servara for macOS</h3>
+              <p>For Apple Silicon Macs running a current version of macOS.</p>
+              <button
+                class="button primary full"
+                type="button"
+                data-download-trigger
+                data-platform="mac"
+              >
+                Download for macOS
+              </button>
+              <small>Version 1.0.0 · ZIP · 119 MB · Unsigned preview</small>
+              <details>
+                <summary>SHA-256 checksum</summary>
+                <div class="checksum">
+                  <code>2e5d8bb0bab9780a4ca4da6f55f9ae209e9d718c3f74fba334b275796bd3a602</code
+                  ><button type="button" data-copy-checksum aria-label="Copy macOS checksum">
+                    Copy
+                  </button>
+                </div>
+              </details>
+            </article>
+            <article class="download-card reveal" data-platform-card="windows">
+              <span class="recommended-label">WINDOWS 10/11</span>
+              <div class="platform-icon" aria-hidden="true">
+                <svg class="windows-mark" viewBox="0 0 24 24">
+                  <path
+                    d="M3 4.5 10.5 3v8H3zm9-1.8L21 1v10h-9zM3 12.5h7.5v8L3 19zm9 0h9v10l-9-1.8z"
+                  ></path>
+                </svg>
+              </div>
+              <h3>Servara for Windows</h3>
+              <p>Portable x64 build for modern 64-bit Windows computers.</p>
+              <button
+                class="button secondary dark full"
+                type="button"
+                data-download-trigger
+                data-platform="windows"
+              >
+                Download for Windows
+              </button>
+              <small>Version 1.0.0 · ZIP · 148 MB · Unsigned preview</small>
+              <details>
+                <summary>SHA-256 checksum</summary>
+                <div class="checksum">
+                  <code>15adab9b155d63f8818e2077bda16c344c78e292f8f8b76ff12e32f5f5ab0ed2</code
+                  ><button type="button" data-copy-checksum aria-label="Copy Windows checksum">
+                    Copy
+                  </button>
+                </div>
+              </details>
+            </article>
+          </div>
+          <div class="install-note reveal">
+            <span>!</span>
+            <div>
+              <strong>Before you download</strong>
+              <p>
+                Because these builds are not yet code-signed, macOS Gatekeeper or Windows
+                SmartScreen will display a security warning. Review the installation notes and
+                verify the checksum before opening the preview.
+              </p>
+            </div>
+            <button type="button" data-install-open>Installation notes</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="faq">
+        <div class="shell faq-grid">
+          <div class="faq-heading reveal">
+            <span class="eyebrow">QUESTIONS, ANSWERED</span>
+            <h2>Good software should be clear about its boundaries.</h2>
+          </div>
+          <div class="faq-list">
+            <details class="reveal">
+              <summary>Does Servara upload my vault?</summary>
+              <p>
+                No. The desktop preview is local-first. Optional shared-vault infrastructure is
+                disabled until production services are configured, and Servara includes no analytics
+                or advertising.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>Can Servara recover my master password?</summary>
+              <p>
+                No. There is no password-recovery bypass. Keep your password and an independent
+                encrypted backup somewhere safe.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>Is Servara a password manager or legal service?</summary>
+              <p>
+                No. Servara organizes references and instructions. It does not store account
+                passwords, execute transfers, create legal authority, or provide legal, financial,
+                tax, medical, or estate-planning advice.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>Why is this called a technical preview?</summary>
+              <p>
+                The application and workflows have passed the project’s automated and packaged
+                tests, but public-release work remains: code signing, notarization, native Windows
+                QA, independent reviews, and support infrastructure.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>What information should I use in the preview?</summary>
+              <p>
+                Use fictional or low-risk evaluation information. Do not rely on an unsigned,
+                unaudited preview as the only home for important records or original documents.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing-section">
+        <div class="shell closing-card reveal">
+          <img src="assets/servara-mark.svg" alt="" width="76" height="76" />
+          <span class="eyebrow light">SERVARA</span>
+          <h2>A calmer way to prepare.</h2>
+          <p>
+            Private household organization, built with care and tested from first launch through
+            recovery.
+          </p>
+          <a class="button light-button" href="#download">Download the technical preview</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="shell footer-grid">
+        <div>
+          <a class="wordmark footer-wordmark" href="#top"
+            ><img src="assets/servara-mark.svg" alt="" width="38" height="38" /><span
+              >Servara</span
+            ></a
+          >
+          <p>Private household organization for the moments that matter.</p>
+        </div>
+        <div>
+          <strong>Product</strong><a href="#product">Features</a><a href="#security">Security</a
+          ><a href="#download">Downloads</a>
+        </div>
+        <div>
+          <strong>Project</strong><a href="#story">Development story</a><a href="#faq">FAQ</a
+          ><a href="security.html">Security overview</a>
+        </div>
+        <div>
+          <strong>Legal</strong><a href="privacy.html">Privacy</a
+          ><a href="terms.html">Preview terms</a>
+        </div>
+      </div>
+      <div class="shell footer-bottom">
+        <span>© <span data-year></span> Servara. Independent student project.</span
+        ><span>No cookies · No analytics · No tracking</span>
+      </div>
+    </footer>
+
+    <dialog class="download-dialog" data-download-dialog aria-labelledby="download-title">
+      <button class="dialog-close" type="button" data-dialog-close aria-label="Close">×</button>
+      <span class="dialog-icon">⇩</span>
+      <p class="eyebrow">TECHNICAL PREVIEW</p>
+      <h2 id="download-title">Before downloading Servara</h2>
+      <p>
+        This build is unsigned and has not received an independent security audit. Use it only for
+        evaluation with fictional or low-risk data.
+      </p>
+      <label
+        ><input type="checkbox" data-preview-agreement />
+        <span>I understand this is an unsigned technical preview.</span></label
+      >
+      <a class="button primary full disabled" data-download-link href="#" download
+        >Continue to download</a
+      >
+      <small>By downloading, you agree to the <a href="terms.html">preview terms</a>.</small>
+    </dialog>
+
+    <dialog class="install-dialog" data-install-dialog aria-labelledby="install-title">
+      <button class="dialog-close" type="button" data-install-close aria-label="Close">×</button>
+      <p class="eyebrow">INSTALLATION</p>
+      <h2 id="install-title">Running the technical preview</h2>
+      <div class="install-tabs" role="tablist" aria-label="Installation platform">
+        <button type="button" role="tab" aria-selected="true" data-install-tab="mac">macOS</button>
+        <button type="button" role="tab" aria-selected="false" data-install-tab="windows">
+          Windows
+        </button>
+      </div>
+      <div data-install-panel="mac">
+        <ol>
+          <li>Download and unzip the macOS archive.</li>
+          <li>Move <strong>Servara.app</strong> into Applications.</li>
+          <li>Verify the SHA-256 checksum shown on this page.</li>
+          <li>
+            Because the preview is unsigned, macOS will warn that it cannot verify the developer.
+            Only override Gatekeeper if you trust this project and understand the risk.
+          </li>
+        </ol>
+      </div>
+      <div data-install-panel="windows" hidden>
+        <ol>
+          <li>Download and unzip the Windows archive.</li>
+          <li>Verify the SHA-256 checksum shown on this page.</li>
+          <li>Open <strong>Servara.exe</strong> from the extracted folder.</li>
+          <li>
+            Windows SmartScreen may warn about an unrecognized application because the preview is
+            unsigned. Continue only if you trust this project and understand the risk.
+          </li>
+        </ol>
+      </div>
+      <p class="install-caution">Never disable system-wide security protections to run Servara.</p>
+    </dialog>
+  </body>
+</html>
