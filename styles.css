@@ -1088,13 +1088,12 @@ img {
   position: relative;
   padding: 38px;
   background: white;
-  border: 1px solid var(--border);
+  border: 2px solid #88a797;
   border-radius: 10px;
+  box-shadow: var(--shadow);
 }
 .download-card.detected {
-  box-shadow:
-    0 0 0 2px #7b9d89,
-    var(--shadow);
+  box-shadow: var(--shadow);
 }
 .recommended-label {
   color: #789085;
