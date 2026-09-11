@@ -19,4 +19,4 @@ The two archives are hosted as assets on the public GitHub release at
 asset URLs are configured at the top of `script.js`. Deploy the contents of
 `website/` as the static site root.
 
-Before calling the site a public production release, replace the unsigned archives with signed builds, publish monitored support and security contacts, have the legal/privacy language professionally reviewed, and update every technical-preview notice.
+Before calling the site a public production release, replace the unsigned archives with signed builds, establish a formal incident-response process for the published support and security channels, have the legal/privacy language professionally reviewed, and update every technical-preview notice.

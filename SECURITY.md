@@ -12,4 +12,6 @@ Do not include passwords, vault contents, personal records, or sensitive vulnera
 public issue.
 
 General questions that do not contain sensitive information may be submitted through
-[GitHub Issues](https://github.com/amrithasb/servara/issues).
+[support.servara@gmail.com](mailto:support.servara@gmail.com) or
+[GitHub Issues](https://github.com/amrithasb/servara/issues). Do not send passwords, vault contents,
+personal records, or sensitive vulnerability details by email.
