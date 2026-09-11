@@ -137,8 +137,8 @@ img {
   align-items: center;
   gap: 11px;
   font:
-    600 25px/1 Georgia,
-    'Times New Roman',
+    700 25px/1 'Times New Roman',
+    Times,
     serif;
   letter-spacing: 0.01em;
 }
