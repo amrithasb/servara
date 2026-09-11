@@ -1,6 +1,6 @@
 # Servara website
 
-Static portfolio and technical-preview download site. It intentionally uses no framework, cookies, analytics, remote fonts, forms, or third-party scripts.
+Static product and technical-preview download site. It intentionally uses no framework, cookies, analytics, remote fonts, forms, or third-party scripts.
 
 ## Local preview
 

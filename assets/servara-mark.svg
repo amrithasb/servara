@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-  <title id="title">Servara</title><desc id="desc">A green rounded square containing a cream lowercase s and a small lock keyhole.</desc>
-  <rect width="512" height="512" rx="112" fill="#345b4c"/>
-  <circle cx="256" cy="256" r="154" fill="#f4f0e4"/>
-  <path d="M342 185c-23-28-55-40-91-37-44 3-73 24-73 56 0 31 25 44 80 54 55 10 82 28 82 62 0 37-35 61-83 61-44 0-80-15-106-44" fill="none" stroke="#345b4c" stroke-width="58" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="374" cy="374" r="55" fill="#d5b96c" stroke="#345b4c" stroke-width="16"/><path d="M374 348a20 20 0 0 0-9 38v20h18v-20a20 20 0 0 0-9-38Z" fill="#345b4c"/>
+  <title id="title">Servara</title>
+  <desc id="desc">Servara’s S monogram in cream on a deep green field.</desc>
+  <rect width="512" height="512" rx="104" fill="#315f50" />
+  <rect x="12" y="12" width="488" height="488" rx="92" fill="none" stroke="#ffffff" stroke-opacity=".09" stroke-width="4" />
+  <path d="M354 163c-27-31-65-47-111-47h-19c-61 0-104 35-104 86 0 43 31 69 96 79l74 11c28 4 43 18 43 42 0 38-35 62-84 62h-14c-43 0-79-15-105-44" fill="none" stroke="#f4f0e4" stroke-width="58" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
