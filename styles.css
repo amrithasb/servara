@@ -191,11 +191,11 @@ img {
 
 .hero {
   position: relative;
-  min-height: 850px;
-  padding: 155px 0 92px;
+  min-height: 760px;
+  padding: 145px 0 82px;
   overflow: hidden;
   color: white;
-  background: linear-gradient(120deg, #122c43 0%, #17364a 62%, #24483f 100%);
+  background: linear-gradient(110deg, #122c43 0%, #16364a 68%, #21463f 100%);
 }
 .hero::before {
   content: '';
@@ -229,9 +229,9 @@ img {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 0.9fr 1.25fr;
+  grid-template-columns: minmax(400px, 0.92fr) minmax(0, 1.18fr);
   align-items: center;
-  gap: 78px;
+  gap: 64px;
 }
 .status-pill {
   display: inline-flex;
@@ -242,7 +242,7 @@ img {
   background: transparent;
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 .status-pill span {
@@ -252,24 +252,20 @@ img {
   background: #8fc4a5;
 }
 .hero h1 {
-  max-width: 640px;
+  max-width: 520px;
   margin: 28px 0 24px;
   font:
-    500 clamp(52px, 5.4vw, 76px)/1 Georgia,
+    500 clamp(48px, 4.8vw, 68px)/1.02 Georgia,
     'Times New Roman',
     serif;
-  letter-spacing: -0.045em;
-}
-.hero h1 em {
-  color: #afcbb9;
-  font-weight: 400;
+  letter-spacing: -0.035em;
 }
 .hero-lede {
-  max-width: 580px;
+  max-width: 500px;
   margin: 0;
   color: #c6d4d1;
-  font-size: 17px;
-  line-height: 1.75;
+  font-size: 16px;
+  line-height: 1.7;
 }
 .hero-actions {
   display: flex;
@@ -357,7 +353,9 @@ img {
 
 .product-frame {
   position: relative;
-  width: 760px;
+  width: 100%;
+  max-width: 700px;
+  justify-self: end;
   overflow: hidden;
   color: #234154;
   background: #f5f7f3;
@@ -391,7 +389,7 @@ img {
   color: #5e7c6c;
 }
 .app-preview {
-  height: 470px;
+  height: 440px;
   display: grid;
   grid-template-columns: 145px 1fr;
 }
@@ -415,11 +413,13 @@ img {
   height: 25px;
   display: grid;
   place-items: center;
-  border-radius: 8px;
+  border-radius: 5px;
   color: #345f50;
   background: #e1eee6;
-  font-size: 18px;
-  transform: rotate(-6deg);
+  font:
+    700 18px/1 'Times New Roman',
+    Times,
+    serif;
 }
 .preview-sidebar > small {
   display: block;
@@ -1622,13 +1622,14 @@ dialog > p:not(.eyebrow) {
     text-align: center;
   }
   .hero {
-    padding: 125px 0 70px;
+    padding: 118px 0 68px;
   }
   .hero-grid {
     gap: 55px;
   }
   .hero h1 {
-    font-size: clamp(48px, 14vw, 70px);
+    font-size: clamp(43px, 12vw, 56px);
+    line-height: 1.04;
   }
   .hero-lede {
     font-size: 15px;
@@ -1641,7 +1642,7 @@ dialog > p:not(.eyebrow) {
     width: 100%;
   }
   .hero-notes {
-    justify-content: center;
+    justify-content: flex-start;
   }
   .product-frame {
     border-radius: 12px;
